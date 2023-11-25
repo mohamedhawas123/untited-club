@@ -1,23 +1,32 @@
 import logo from './logo.svg';
-import './App.css';
+import Header from './screens/header/header';
+import LectoneTwoComponen from './screens/lect2Component/lecture2Componet';
+import LectoneComponen from './screens/lect1Component/lecture1Componet';
+import './App.css'
+import BusinessCard from './screens/businessCard/businessCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header />
+     <div className='name'>
+      <h1>UNITED CLUB</h1>
+     </div>
+    <div className='containerr' >
+    <div className='cards' >
+     <LectoneComponen key="lectone1" />
+
+      <LectoneTwoComponen />
+     </div>
+     <div>
+      <BusinessCard />
+    </div>
+    </div>
+   
+    
+    
+     
+    
     </div>
   );
 }

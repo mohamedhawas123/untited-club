@@ -1,0 +1,105 @@
+
+.bussins-container {
+    display: flex;
+    border: 2px solid #9898C3;
+    border-radius: 45px 25px 45px 25px;
+    width: 280px; 
+    height: 520px;
+    align-items: center;
+    padding-left: 20px;
+    background-color:#F79959;
+    margin-right: 50px;
+    margin-top: 30px;
+    flex-direction: column; 
+    direction: rtl;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .bussins-container {
+      border-radius: 20px;
+      width: 100%; 
+      height: 100%; 
+      padding: 10px;
+      margin-right: 0;
+      margin-top: 20px;
+      direction: ltr; 
+    }
+  }
+  
+
+
+.bussins-circle {
+    position: relative;
+    top: 100px;
+    right: 80px;
+    width: 230px; 
+    height: 220px; 
+    border-radius: 50%; 
+    background-color: #AF9FC2; 
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.email, .phone, .university {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagee img {
+    color: black;
+}
+
+.email p, .phone p, .university p  {
+    font-weight: bold; 
+    color: #FFF;
+}
+
+.job p {
+    font-weight: bold; 
+    color: #FFF;
+}
+
+.email span, .phone span, .university span {
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    .bussins-circle {
+      top: 50px;
+      right: 40px;
+      width: 150px; 
+      height: 150px;
+    }
+  
+    .email, .phone, .university {
+      flex-direction: row; 
+      align-items: center;
+      direction: rtl;
+    }
+  
+    .email p, .phone p, .university p {
+      font-size: smaller; 
+      align-items: center;
+    }
+
+    .email span, .phone span, .university span {
+      color: #FFF;
+      align-items: center;
+  }
+  
+
+    .bussiness-title  p{
+      position: relative;
+      right: 70px;
+      top: 20px;
+      color: #FFF;
+      font-weight: 900px;
+      font-size: large;
+      align-items: center;
+      margin-left: 130px;
+    }
+  }
